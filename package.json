@@ -2,8 +2,9 @@
 	  "name": "hump"
 	, "version": "0.1.0"
 	, "dependencies":
-		{ "express": ""
-		, "mongoose": ""
+		{ "express": "2.4.6"
+		, "mongoose": "2.0.0"
+		, "jade": "0.15.3"
 		}
 	, "private": "true"
 }
