@@ -1,0 +1,19 @@
+!!!
+html
+	head
+		title profile
+		script(type='text/javascript', src='/cdn/json2.js')
+		script(type='text/javascript', src='/cdn/jquery-min.js')
+		script(type='text/javascript', src='/cdn/underscore-min.js')
+		script(type='text/javascript', src='/cdn/backbone-min.js')
+		script(type='text/javascript', src='js/hump.js')
+		link(rel='stylesheet', type='text/css', media='all', href='css/hump.css')
+	body
+		div#profile
+
+		script(type='text/template', id='profile-template')					<% if (_id) { %>
+			<!--div><%= _id %></div-->
+			<div><%= name %></div>
+			<div class='about'><%= about %></div>
+			<% } %>
+
