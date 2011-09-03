@@ -15,8 +15,8 @@ app.configure () ->
 app.get '/', (req, res) ->
 	res.render 'profile', {layout: false}
 
-app.get '/camel/:id', (req, res) ->
-	camel.getProfile req.params.id, (c) -> res.send JSON.stringify(c) #util.format('%j', c)
+require('./app/routes/camel')(app)
+require('./app/routes/activity')(app)
 
 app.listen 3007
 
